@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Smeg ECF01RDUK Freestanding Retro Espresso Coffee Machine - RED",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/product1.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Portable Wireless Floating Bluetooth Speaker",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/product2.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Asus ROG Zephyrus S Thin and Portable Gaming Laptop",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/product3.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "The Mi A3 Android One Smartphone from Xiaomi",
+        "price": 22.99,
+        "image": { "fields": { "file": { "url": "./images/product4.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "LG InstaView Fridge",
+        "price": 88.99,
+        "image": { "fields": { "file": { "url": "./images/product5.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "R2-Q2 Astromech Droid 3D Model",
+        "price": 32.99,
+        "image": { "fields": { "file": { "url": "./images/product6.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Sony's Scanning Drone",
+        "price": 45.99,
+        "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Garmin",
+        "price": 33.99,
+        "image": { "fields": { "file": { "url": "./images/product8.jpeg" } } }
+      }
+    }
+  ]
+}
