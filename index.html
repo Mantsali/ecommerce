@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Electronics</title>
     <!---fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,20 +17,29 @@
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="#">Electronics</a>
+          <a class="navbar-brand" href="index.html">Electronics</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0;">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Login</a>
+                <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Register</a>
+                <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+              </li>
+              <li class="nav-item" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+                <div class="wishlist-btn">
+                    <span class="nav-icon nav-link">
+                      <i class="fa-solid fa-heart"></i>
+                    </span>
+                    <div class="wishlist-items">0</div>
+                </div>
+                
               </li>
               <li class="nav-item" data-bs-toggle="modal" data-bs-target="#cartModal">
                 <div class="cart-btn">
@@ -59,9 +68,9 @@
                 <img class="bd-placeholder-img" src="images/sebastian-scholz-nuki-Fh3Dtg6QX4Q-unsplash.jpg" alt="" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <div class="container">
                   <div class="carousel-caption text-start">
-                    <h1>Example headline.</h1>
-                    <p>Some representative placeholder content for the first slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    <h1>New deals on audio</h1>
+                    <p>Add some sound to your space in a stylish way.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">View our deals</a></p>
                   </div>
                 </div>
               </div>
@@ -70,9 +79,9 @@
                 
                 <div class="container">
                   <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>Some representative placeholder content for the second slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    <h1>Latest smartphones.</h1>
+                    <p>Upgrade you smartphone with our selection of the latest in mobile technology</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Upgrade</a></p>
                   </div>
                 </div>
               </div>
@@ -82,9 +91,9 @@
                
                 <div class="container">
                   <div class="carousel-caption text-end">
-                    <h1>One more for good measure.</h1>
-                    <p>Some representative placeholder content for the third slide of this carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    <h1>Gaming PCs.</h1>
+                    <p>Improve your gaming experience with these new deals PCs and components.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Ready to play</a></p>
                   </div>
                 </div>
               </div>
@@ -100,154 +109,385 @@
           </div>
         
     </header>
-    <div>
-        <div class="row">
-        <aside class="col-3 py-4">
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">appliances</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">gadgets</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">computers and laptops</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> smartphones and watches</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">tv and audio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">outdoor diy</a>
-                  </li>
+    <main class="container">
+      <!----Search Section-->
+      <section id="search" class="row">
+        <div class="nav justify-content-center">
+          <form action="" class="d-flex"  style="min-width: 1024px;">
+            <div class="input-group mb-3">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
               </ul>
-            
-            
-            
-           
-            
-            
-        </aside>
-        <main class="col p-5">
-            <div class="row row-cols-1 row-cols-md-3 g-4 products-content">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="./images/product1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-                <!--
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-regular fa-heart"></i>
-                -->
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/product2.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">product2</h5>
-                      <p class="card-text">This is a short card.</p>
-                    </div>
-                    <div class="product-button">
-                        <button class="bag-btn btn btn-dark" data-id="1">
-                            <i class="fa-solid fa-cart-shopping "></i>
-                        </button>
-                        <button class="bag-btn btn btn-dark" data-id="1">
-                            <i class="fa-solid fa-heart"></i>
-                        </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/product3.jpg"src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                      <img src="images/product4.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="images/product5.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="images/product6.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </div> 
-                  </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/product7.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                      <img src="images/product8.jpg " class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
-                </div>
+              <input type="text" class="form-control" placeholder="Search" aria-label="Search" >
+              <button class="btn btn-outline-success" type="submit">Search</button>
 
+            </div>
+          </form>
+        </div>
+      </section>
+      <!----End Search Section-->
+      <!---Spacials Section-->
+      <section id="specials" >
+        <div class="row text-center" >
+          <h1 class="py-2">Speacials</h1>
+        </div>
+        <div class="row">
+        <div class="col-3 vertical-banner">
+          <!--<img src="images/nikita-katsevich-QXDJGPZTwxs-unsplash.jpg" alt="">-->
+<h2 class="px-4">Check out our monthly specials</h2>
+<button type="button" class="btn btn-dark">View more</button>
+        </div>
+
+
+        <div class="col promoted-content h-500 overflow-hidden">
+<div class="row">
+          <div class="col-2">
+            <div class="card h-100">
+              <img src="images/product2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">product2</h5>
               </div>
-        </main>
-    </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="card h-100">
+              <img src="images/product3.jpg"src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+              <div class="card h-100">
+                <img src="images/product4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="card h-100">
+                <img src="images/product5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                 
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="card h-100">
+                <img src="images/product6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+              
+                </div>
+              </div> 
+            </div>
+
+          <div class="col-2">
+            <div class="card h-100">
+              <img src="images/product7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+              <div class="card h-100">
+                <img src="images/product8.jpg " class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="row text-center" >
+        <a href="" class="py-2">View more</a>
+   
+      </div>
+      </section>
+      <!---End Promtion Section-->
+<!--main content-->
+      <section id="main-content" class="my-5">
+        <div class="row text-center" >
+          <h1 class="py-2">Shop</h1>
+        </div>
+
+        <div class="row">
+        <aside class="col-3">
+          <h3  class="text-center py-2">Category</h3> 
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">appliances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">gadgets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">computers and laptops</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> smartphones and watches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">tv and audio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">outdoor diy</a>
+              </li>
+          </ul>
+
+        
+    </aside>
+    <section id="browse" class="col-9 p-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4 products-content">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./images/product1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <!--
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+          -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/product2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">product2</h5>
+                <p class="card-text">This is a short card.</p>
+              </div>
+              <div class="product-button">
+                  <button class="bag-btn btn btn-dark" data-id="1">
+                      <i class="fa-solid fa-cart-shopping "></i>
+                  </button>
+                  <button class="bag-btn btn btn-dark" data-id="1">
+                      <i class="fa-solid fa-heart"></i>
+                  </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/product3.jpg"src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+              <div class="card h-100">
+                <img src="images/product4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/product5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a short card.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/product6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div> 
+            </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/product7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+              <div class="card h-100">
+                <img src="images/product8.jpg " class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+          </div>
+
+        </div>
+  </section>
+
+
+  </div>
+  <div class="row text-center" >
+    <a href="" class="py-2">View more</a>
+
+  </div>
+      </section>
+      <!--End main content-->
+    </main>
 <!-- CArt modal-->
 
 <div class="modal fade" id="cartModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="cartModalLabel">Your cart</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Your cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="cart-content">
+            <p>Cart is Empty</p>
         </div>
-        <div class="modal-body">
-          <div class="cart-content">
-            
-          </div>
-        </div>
-        <div class="modal-footer">
-            <h3>Your total: R<span class="cart-total">0</span></h3>
-          <button type="button" class="btn btn-secondary clear-cart">Clear Cart</button>
-          <button type="button" class="btn btn-primary">Proceed to checkout</button>
-        </div>
+      </div>
+      <div class="modal-footer">
+          <h3>Your total: R<span class="cart-total">0</span></h3>
+        <button type="button" class="btn btn-secondary clear-cart">Clear Cart</button>
+        <button type="button" class="btn btn-primary">Proceed to checkout</button>
       </div>
     </div>
   </div>
+</div>
+<!--End CArt modal-->
 
+<!--wishlist Modal-->
+<div class="modal fade" id="wishlistModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="wishlistModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="wishlistModalLabel">Your Wishlist</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="wishlist-content">
+            <p>Cart is Empty</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+          <h3>Your total: R<span class="wishlist-total">0</span></h3>
+        <button type="button" class="btn btn-secondary clear-cart">Clear wishlist</button>
+        <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#cartModal" >Proceed to Cart</button>
+      </div>
     </div>
+  </div>
+</div>
+<!--end wishlist Modal-->
+
+<!--Login Modal-->
+<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Your cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-content">
+           <form action="">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+        
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+           </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+          
+        <p>New customer? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" style="font-weight: bold">Create your account</a>
+          <p>Lost password? <a style="font-weight: bold">Recover password</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Login Modal-->
+
+<!--register Modal-->
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">Your cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-content">
+          <form action="">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" >
+              <label for="floatingInput">First Name</label>
+            </div>
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" >
+              <label for="floatingInput">Last Name</label>
+            </div>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" >
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" >
+              <label for="floatingPassword">Password</label>
+            </div>
+        
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+           </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+          
+          <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" style="font-weight: bold">Login here</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Register Modal-->
+
     <footer class="p-5">
         <div class="row contact">
             <div class="col-4">
@@ -257,8 +497,8 @@
                     <button class="btn btn-outline-secondary" type="submit" id="subscribe">Subscribe</button>
                   </form>
             </div>
-            <div class="col-2"></div>
-            <div class="col-4">
+            <div class="col-1"></div>
+            <div class="col-3">
                 <h5>Contact Us</h5>
                 <pre><i class="fa-solid fa-location-dot"></i>Pty Ltd.
 Midrand 0157, 
@@ -266,11 +506,86 @@ Gauteng, South Africa</pre>
                 <p><i class="fa-solid fa-phone"></i>(010) xxx xxxx</p>
                 <p><i class="fa-solid fa-envelope"></i>sales@email.com</p>
             </div>
+            <div class="col">
+              <h5>Electronics</h5>
+          <p>This website is for demo puporses only, I do not own the rights to any of the images</p>
+</div>
         </div>
+        <div class="row py-2">
+          <div class="col-4">
+            <h5>Information</h5>
+            <ul>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms and Condition</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Cookies Policy</a>
+              </li>
+              <li>
+                <a href="#">Our Blog</a>
+              </li>
+            
+            </ul>
+
+          </div>
+
+
+          <div class="col-4">
+            <h5>Services</h5>
+            <ul>
+              <li>
+                <a href="#">Shipping info</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">My points</a>
+              </li>
+              <li>
+                <a href="#">Warranty and Return</a>
+              </li>
+              <li>
+                <a href="#">Payment Methods</a>
+              </li>
+              <li>
+                <a href="#">Site Map</a>
+              </li>
+            
+            </ul>
+
+          </div>
+
+          <div class="col-4">
+            <h5>Shop</h5>
+            <ul>
+              <li>
+                <a href="#">Top Sellers</a>
+              </li>
+              <li>
+                <a href="#">Favourites</a>
+              </li>
+                          
+            </ul>
+
+          </div>
+        </div>
+
+
         <div class="row text-center py-2 copyright">
-            <p>&copy; <span id="copyright-year"></span> to no one.  All Rights Reserved.</p> 
+             <p>Copyrighted &copy; <span id="copyright-year"></span> All Rights Reserved To No One.</p> 
         </div>
-        
+  
+        </div>
     </footer>
 
     <section class="privacy-policy fixed-bottom px-5 py-2" >

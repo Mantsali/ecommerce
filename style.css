@@ -10,6 +10,14 @@
     box-sizing: border-box;
 }
 
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    
+}
 img{
     width: 100%;
 }
@@ -23,12 +31,12 @@ body{
     font-family: 'Lobster', cursive;
 }
 
-.cart-btn {
+.cart-btn, .wishlist-btn {
 position: relative;
 cursor: pointer;
 color: #fff;
 }
-.cart-items {
+.cart-items, .wishlist-items {
 position: absolute;
 top: -8px;
 right: -8px;
@@ -54,12 +62,42 @@ color: var(--white);
     text-transform: uppercase;
 }
 
+/************specials************/
+#specials .vertical-banner{
+    background-image: url('images/nikita-katsevich-QXDJGPZTwxs-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+}
+
+
 aside {
     border-right: 1px solid var(--gray);
     min-height: 80vh;
 }
+aside h3{
+    background-color: var(--black); 
+    color:white; 
+}
+aside  a.nav-link{
+    color: #000;
+}
+
+aside  a.nav-link:hover{
+    color: blue;
+}
 
 /************************products*****************************/
+.products-content .col{
+    width: 14rem;
+}
 .product-button{
     display: flex;
     flex-direction: column;
@@ -145,6 +183,16 @@ footer{
 footer .contact i {
     padding-right: 15px;
 }
+
+footer a{
+    color: var(--white);
+}
+
+footer a:hover{
+    color: blue;
+}
+
+
 
 .privacy-policy {
     background-color: var(--white);
