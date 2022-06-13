@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <!---fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Electronics</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Register">Register</a>
+              </li>
+              <li class="nav-item" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+                <div class="wishlist-btn">
+                    <span class="nav-icon nav-link">
+                      <i class="fa-solid fa-heart"></i>
+                    </span>
+                    <div class="wishlist-items">0</div>
+                </div>
+                
+              </li>
+              <li class="nav-item" data-bs-toggle="modal" data-bs-target="#cartModal">
+                <div class="cart-btn">
+                    <span class="nav-icon nav-link">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </span>
+                    <div class="cart-items">0</div>
+                </div>
+                
+              </li>
+              
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+<!---content here-->
+
+
+
+      <footer class="p-5">
+        <div class="row contact">
+            <div class="col-4">
+                <h4>Sign up for our Newsletter</h4>
+                <form class="input-group mb-3">
+                    <input class="form-control" type="email" placeholder="Email" aria-label="Email" aria-label="Email" aria-describedby="subscribe">
+                    <button class="btn btn-outline-secondary" type="submit" id="subscribe">Subscribe</button>
+                  </form>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3">
+                <h5>Contact Us</h5>
+                <pre><i class="fa-solid fa-location-dot"></i>Pty Ltd.
+Midrand 0157, 
+Gauteng, South Africa</pre>
+                <p><i class="fa-solid fa-phone"></i>(010) xxx xxxx</p>
+                <p><i class="fa-solid fa-envelope"></i>sales@email.com</p>
+            </div>
+            <div class="col">
+              <h5>Electronics</h5>
+          <p>This website is for demo puporses only, I do not own the rights to any of the images</p>
+</div>
+        </div>
+        <div class="row py-2">
+          <div class="col-4">
+            <h5>Information</h5>
+            <ul>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms and Condition</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Cookies Policy</a>
+              </li>
+              <li>
+                <a href="#">Our Blog</a>
+              </li>
+            
+            </ul>
+
+          </div>
+
+
+          <div class="col-4">
+            <h5>Services</h5>
+            <ul>
+              <li>
+                <a href="#">Shipping info</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">My points</a>
+              </li>
+              <li>
+                <a href="#">Warranty and Return</a>
+              </li>
+              <li>
+                <a href="#">Payment Methods</a>
+              </li>
+              <li>
+                <a href="#">Site Map</a>
+              </li>
+            
+            </ul>
+
+          </div>
+
+          <div class="col-4">
+            <h5>Shop</h5>
+            <ul>
+              <li>
+                <a href="#">Top Sellers</a>
+              </li>
+              <li>
+                <a href="#">Favourites</a>
+              </li>
+                          
+            </ul>
+
+          </div>
+        </div>
+
+
+        <div class="row text-center py-2 copyright">
+             <p>Copyrighted &copy; <span id="copyright-year"></span> All Rights Reserved To No One.</p> 
+        </div>
+  
+        </div>
+    </footer>
+
+    <section class="privacy-policy fixed-bottom px-5 py-2" >
+      
+        <h5>Cookie Notification</h5>
+        <p>Please note that we use cookies to offer you a better user experience, analyse site traffic, and better serve advertising. By continuing to use this website, you consent to the use of cookies in accordance with our <a href="">Privacy Policy</a></p>
+        <button type="button" class="btn btn-primary float-end">Got it</button>
+        
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<!--contentful-->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+<script src="keys.js"></script>
+<script src="main.js"></script>
+<script>
+    document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+  //  localStorage.clear();
+</script>
+    </body>
+</html>
